@@ -6,6 +6,8 @@ declare_id!("Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS");
 pub mod swap_app {
     use super::*;
 
+    const PRICE: i32 = 10;
+
     pub fn create(ctx: Context<Create>) -> ProgramResult {
         let counter_account = &mut ctx.accounts.counter_account;
         counter_account.count = 0;
