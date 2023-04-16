@@ -18,5 +18,15 @@ default = []
 [profile.release]
 overflow-checks = true
 
+[features]
+no-entrypoint = []
+
 [dependencies]
 anchor-lang = "0.24.1"
+borsh = "0.9.3"
+borsh-derive = "0.10.0"
+solana-program = "~1.10.35"
+
+[dev-dependencies]
+solana-program-test = "~1.10.35"
+solana-sdk = "~1.10.35"

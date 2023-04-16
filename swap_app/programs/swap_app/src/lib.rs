@@ -38,5 +38,5 @@ pub struct CounterAccount {
 #[derive(Accounts)]
 pub struct Increment<'info> {
     #[account(mut)]
-    pub counter_account: Account<'info, CounterAccount>
+    pub counter_account: Account<'info, CounterAccount>,
 }
